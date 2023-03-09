@@ -1,0 +1,64 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+# [character]
+# success_symbol = "[≻⊲⋗](bold blue)"
+# error_symbol = "[≻⊲⋗](bold red)"
+
+# format = """
+# [┌ ](bold blue)[$all](bold yellow)
+# [└](bold blue)[ ≻⊲⋗](cyan) """
+
+# format = """
+# [┌ ](bold blue)[$all](bold yellow)
+# [└](bold blue)[ ≻⊲⋗](cyan) """
+
+# format = """[$directory](yellow)[≻⊲⋗](bold cyan) """
+# format = """[$directory](yellow) [$status](blue) """
+# format = """($all)$character"""
+right_format = """$git_branch$git_status"""
+
+[character]
+# success_symbol = "[─────────>](bold blue)"
+# error_symbol = "[─────────>](bold red)"
+success_symbol = "[><꛴>](cyan)"
+error_symbol = "[><꛴>](red)"
+# success_symbol = "[≻⊲⋗](bold cyan)"
+# error_symbol = "[≻⊲⋗](bold red)"
+
+
+# [character]                            # The name of the module we are configuring is "character"
+# success_symbol = "[≻⊲⋗](bold blue)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# [character]                            # The name of the module we are configuring is "character"
+# success_symbol = "[><꛴>](bold blue)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+
+
+[line_break]
+disabled = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[directory]
+style = "yellow"
+truncation_length = 2
+# truncation_symbol = "…/"
+
+# [python]
+# disabled = true
+
+# [rust]
+# disabled = true
+
+[lua]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[perl]
+disabled = true
+
