@@ -40,7 +40,7 @@ theme.taglist_fg_urgent         = theme.red
 theme.barcolor                  = theme.bg_main
 theme.bg_systray                = theme.bg_main
 theme.border_width              = dpi(2)
-theme.useless_gap               = dpi(6)
+theme.useless_gap               = dpi(4)
 
 theme.tasklist_plain_task_name  = true
 theme.tasklist_disable_icon     = true
@@ -69,15 +69,16 @@ function theme.at_screen_connect(s)
    --    gears.wallpaper.maximized(theme.wallpaper, s, true)
    -- end
    -- local symbol = "∞"
-   local symbol = "♥"
+   -- local symbol = "♥"
+   local symbol = "⚝"
     bling.module.tiled_wallpaper(symbol, s, {
         fg = theme.bg_accent_alt, -- define the foreground color
         bg = theme.wallpaper, -- define the background color
         offset_y = 10,  -- set a y offset
-        offset_x = 5,  -- set a x offset
-        font = "Iosevka",  -- set the font (without the size)
-        font_size = 25, -- set the font size
-        padding = 100,  -- set padding (default is 100)
+        offset_x = 10,  -- set a x offset
+        font = "Noto Sans Symbols",  -- set the font (without the size)
+        font_size = 30, -- set the font size
+        padding = 140,  -- set padding (default is 100)
         zickzack = true -- rectangular pattern or criss cross
     })
 
